@@ -43,7 +43,6 @@ export default Ember.ArrayController.extend({
   }.property('@each.isCompleted'),
 
   allAreDone: function(key, value) {
-    console.log(key + ': ' + value);
     if (value === undefined) {
       return !!this.get('length') && this.isEvery('isCompleted');
     } else {
