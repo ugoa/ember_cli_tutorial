@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
-TodosController = Ember.ArrayController.extend({
+export default Ember.ArrayController.extend({
   actions: {
     createTodo: function() {
       var title = this.get('newTitle');
@@ -19,5 +19,3 @@ TodosController = Ember.ArrayController.extend({
     }
   }
 });
-
-export default TodosController
