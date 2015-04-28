@@ -8,6 +8,6 @@ export default Ember.Route.extend({
   },
   
   renderTemplate: function(controller) {
-    this.render('todos.index', { controller: controller })
+    this.render('todos.index', { controller: controller });
   }
 });

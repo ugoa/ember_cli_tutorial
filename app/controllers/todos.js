@@ -21,7 +21,7 @@ export default Ember.ArrayController.extend({
 
       this.set('newTitle', '');
       
-      todo_item.save;
+      todo_item.save();
     }
   },
 
@@ -51,4 +51,4 @@ export default Ember.ArrayController.extend({
       return value;
     }
   }.property('@each.isCompleted')
-})
+});
